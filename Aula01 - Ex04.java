@@ -18,23 +18,25 @@ public class Ex04 {
 		double areaRetangulo;
 		
 		System.out.println("Digite o valor de A: ");
-		sc.nextDouble();
+		A = sc.nextDouble();
 		
 		System.out.println("Digite o valor de B: ");
-		sc.nextDouble();
+		B = sc.nextDouble();
 		
 		System.out.println("Digite o valor de C: ");
-		sc.nextDouble();
+		C = sc.nextDouble();
 		
-		areaTriangulo = ;
+		areaTriangulo = (A * C) / 2;
 		
-		areaCirculo = 2 * 3.14159 * C;
+		areaCirculo = 3.14159 * Math.pow(C, 2);
 		
-		areaTrapezio = ;
+		areaTrapezio = ((A + B) * C) / 2;
 		
 		areaQuadrado = Math.pow(B, 2);
 		
 		areaRetangulo = A * B;
+		
+		System.out.printf("Triangulo: %.3f \nCirculo: %.3f \nTrapezio: %.3f \nQuadrado: %.3f \nRetangulo: %.3f", areaTriangulo, areaCirculo, areaTrapezio, areaQuadrado, areaRetangulo);
 		
 		sc.close();
 	}
